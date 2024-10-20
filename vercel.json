@@ -1,0 +1,29 @@
+{
+    "version": 2,
+    "functions": {
+      "api/user/app/main.py" : {"runtime": "vercel-python@4.3.0"},
+      "api/it/app/main.py" : {"runtime": "vercel-python@4.3.0"},
+      "api/blog/app/main.py" : {"runtime": "vercel-python@4.3.0"},
+      "api/architecture/app/main.py" : {"runtime": "vercel-python@4.3.0"}
+    },
+    
+
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "user/app/main.py"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "it/app/main.py"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "blog/app/main.py"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "architecture/app/main.py"
+      }
+    ]
+  }
